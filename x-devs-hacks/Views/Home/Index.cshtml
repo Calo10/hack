@@ -1,5 +1,82 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-<h2>Index</h2>
+    #map {
+        height: 90%;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+</style>
+
+<div id="map"></div>
+<script>
+
+    // check if the user's browser has geo
+    /*if(navigator.geolocation) {
+        var position = navigator.geolocation.getCurrentPosition();
+    }*/
+
+    function initMap() {
+
+        if (navigator.geolocation) {
+
+            var lat = 0;
+            var lng = 0;
+            var locations = [
+              ['Bondi Beach', -33.890542, 151.274856, 4],
+              ['Coogee Beach', -33.923036, 151.259052, 5],
+              ['Cronulla Beach', -34.028249, 151.157507, 3],
+              ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+              ['Maroubra Beach', -33.950198, 151.259302, 1]
+            ];
+            var latLng = new google.maps.LatLng(9.901015, -83.9954723);
+            var latLng2 = new google.maps.LatLng(50.000000, -10.999999);
+            /*function setPosition(position) {
+                lat = position.coords.latitude;
+                lon = position.coords.longitude;
+                console.log(lat); // 9.901015
+                console.log(lon); // -83.9954723
+            }*/
+            //var position = navigator.geolocation.getCurrentPosition(setPosition);
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center:new google.maps.LatLng(-33.92, 151.25), //{ lat: lat, lng: lng },
+                scrollwheel: true,
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            // set multiple markers in the map
+            var marker, i;
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+
+        }
+
+    }
+
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5igjNW3qEU-FZ62YOO4S2dwQu6Xn-lv8&callback=initMap"></script>
