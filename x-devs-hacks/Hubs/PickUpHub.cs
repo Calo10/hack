@@ -8,9 +8,9 @@ namespace x_devs_hacks.Hubs
 {
     public class PickUpHub : Hub
     {
-        public void Hello()
+        public void SendPickUp()
         {
-            Clients.All.hello();
+            Clients.All.UpdatePickUpd();
         }
     }
 }

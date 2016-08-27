@@ -100,6 +100,5 @@ C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.Razor.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.WebPages.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.xml
-C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
 C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.dll
 C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
