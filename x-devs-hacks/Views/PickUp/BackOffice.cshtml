@@ -116,7 +116,7 @@
                 var wayPoint = [];
                 var itemRoutes = '';
                 lstLickups.forEach(function (item, index) {
-                    wayPoint.push[{ location: new google.maps.LatLng(item.Lat, item.Long), stopover: true }];
+                    wayPoint.push({ location: new google.maps.LatLng(item.Lat, item.Long), stopover: true });
                     itemRoutes += '<li data-id="' + item.id + '" data-description="' + item.Description + '" data-status="' + item.Status + '">';
                     itemRoutes += '<div>';
                     itemRoutes += '<h4>' + item.id + '</h4>';
