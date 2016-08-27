@@ -2,4 +2,4 @@
 
 ## Sobre el proyecto
 
-![about](./assets/e-waste_web-01_720)
+![about](https://github.com/x-devs/hack/blob/master/assets/e-waste_web-01_720.png)
