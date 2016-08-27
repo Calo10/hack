@@ -12,3 +12,13 @@
 /Mobile/ClientApp.UWP/obj/x86/Debug
 /Mobile/ClientApp.iOS/obj/iPhone/Debug
 /Mobile/ClientApp.Droid/obj/Debug
+/ClientApp/.vs/ClientApp/v14
+/ClientApp/ClientApp/ClientApp/bin/Debug
+/ClientApp/ClientApp/ClientApp/obj/Debug
+/ClientApp/ClientApp/ClientApp.Droid/bin/Debug
+/ClientApp/ClientApp/ClientApp.UWP/obj/x86/Debug
+/ClientApp/ClientApp/ClientApp.Windows/obj/Debug
+/ClientApp/ClientApp/ClientApp.WinPhone/obj/Debug
+/ClientApp/packages
+/ClientApp/ClientApp.userprefs
+/x-devs-hacks.userprefs

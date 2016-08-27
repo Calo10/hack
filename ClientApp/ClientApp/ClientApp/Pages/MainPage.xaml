@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ClientApp"
+             x:Class="ClientApp.MainPage"
+                  Title="App">
+  <MasterDetailPage.Master>
+    <ContentPage Title="Titulo">
+			<StackLayout Orientation="Vertical">
+				<Label Text="Prueba" />
+			</StackLayout>
+    </ContentPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <ContentPage Title="Detail">
+      <Label Text="Welcome to Xamarin Forms!"
+         VerticalOptions="Center"
+         HorizontalOptions="Center" />
+    </ContentPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
