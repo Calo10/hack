@@ -6,11 +6,11 @@ using Microsoft.AspNet.SignalR;
 
 namespace x_devs_hacks.Hubs
 {
-    public class PickUpHub : Hub
+    public class PickupHub : Hub
     {
-        public void SendPickUp()
+        public void SendPickUp(int IdUser,string Description, string Image, double Lat, double Long)
         {
-            Clients.All.UpdatePickUpd();
+            Clients.All.broadcastPick();
         }
     }
 }
