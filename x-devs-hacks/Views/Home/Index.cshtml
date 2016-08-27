@@ -17,52 +17,87 @@
 </style>
 
 <div id="map"></div>
+
+
+
 <script>
 
     // check if the user's browser has geo
     /*if(navigator.geolocation) {
         var position = navigator.geolocation.getCurrentPosition();
     }*/
+    var routes = {
+        getLast: '@Url.Action("getAllPickUps", "PickUp")'
+    };
 
-    function initMap() {
+</script>
+
+<script src="~/Shared/lib/Theme%20Porto/themeforest/Documentation/Porto/assets/vendor/jquery/jquery.js"></script>
+
+
+<script>
+
+    var myMap = function () { };
+
+    myMap.prototype.getLats = function () {
+
+        return new Promise(function (resolve, reject) {
+            $.post(routes.getLast, {}, function (response) {
+                resolve(response);
+            });
+        });
+
+    };
+
+    myMap.prototype.initMap = function () {
 
         if (navigator.geolocation) {
 
-            var lat = 0;
-            var lng = 0;
-            var locations = [
-              ['Bondi Beach', -33.890542, 151.274856, 4],
-              ['Coogee Beach', -33.923036, 151.259052, 5],
-              ['Cronulla Beach', -34.028249, 151.157507, 3],
-              ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-              ['Maroubra Beach', -33.950198, 151.259302, 1]
-            ];
-            var latLng = new google.maps.LatLng(9.901015, -83.9954723);
-            var latLng2 = new google.maps.LatLng(50.000000, -10.999999);
-            /*function setPosition(position) {
-                lat = position.coords.latitude;
-                lon = position.coords.longitude;
-                console.log(lat); // 9.901015
-                console.log(lon); // -83.9954723
-            }*/
-            //var position = navigator.geolocation.getCurrentPosition(setPosition);
+            this.getLats()
+            .then(function (lstLickups) {
+                var lat = 0;
+                var lng = 0;
+                //var locations = [
+                //  ['Bondi Beach', -33.890542, 151.274856, 4],
+                //  ['Coogee Beach', -33.923036, 151.259052, 5],
+                //  ['Cronulla Beach', -34.028249, 151.157507, 3],
+                //  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+                //  ['Maroubra Beach', -33.950198, 151.259302, 1]
+                //];
 
-            // Create a map object and specify the DOM element for display.
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center:new google.maps.LatLng(-33.92, 151.25), //{ lat: lat, lng: lng },
-                scrollwheel: true,
-                zoom: 10,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            });
+                //var latLng = new google.maps.LatLng(9.901015, -83.9954723);
+                //var latLng2 = new google.maps.LatLng(50.000000, -10.999999);
 
-            // set multiple markers in the map
-            var marker, i;
+                //var position = navigator.geolocation.getCurrentPosition(setPosition);
 
-            for (i = 0; i < locations.length; i++) {
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                    map: map,
-                    icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                // Create a map object and specify the DOM element for display.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: new google.maps.LatLng(9.901141, -83.995116),
+                    scrollwheel: true,
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                // set multiple markers in the map
+                var marker, i;
+
+                //for (i = 0; i < locations.length; i++) {
+                //    marker = new google.maps.Marker({
+                //        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                //        map: map,
+                //        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                //    });
+
+                //}
+
+                lstLickups.forEach(function (item, index) {
+
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        map: map,
+                        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                    });
+
                 });
 
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
@@ -71,12 +106,17 @@
                         infowindow.open(map, marker);
                     }
                 })(marker, i));
-            }
+            })
+            .cath(function (err) { alert('Se produjo un error obteniendo la informacion de los pickups'); });
 
         }
+        else { alert('Actualiza tu navegador para accesar a todos las caracteristicas de la pagina'); }
+    };
 
-    }
 
+    var Controller = new myMap();
+
+    console.log(Controller.getLats());
 
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5igjNW3qEU-FZ62YOO4S2dwQu6Xn-lv8&callback=initMap"></script>
