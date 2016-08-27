@@ -25,45 +25,6 @@ C:\Users\krojas\Desktop\hackhaton\x-devs-hacks\x-devs-hacks\bin\System.Web.WebPa
 C:\Users\krojas\Desktop\hackhaton\x-devs-hacks\x-devs-hacks\bin\System.Web.WebPages.Razor.xml
 C:\Users\krojas\Desktop\hackhaton\x-devs-hacks\x-devs-hacks\obj\Debug\x-devs-hacks.dll
 C:\Users\krojas\Desktop\hackhaton\x-devs-hacks\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.dll.config
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.pdb
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Newtonsoft.Json.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Net.Http.Formatting.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Helpers.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.WebHost.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Mvc.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Razor.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Newtonsoft.Json.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Net.Http.Formatting.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Helpers.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.WebHost.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Mvc.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Razor.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.Core.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Security.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Owin.dll
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.Core.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Security.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\x-devs-hacks.dll.config
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\x-devs-hacks.dll
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\x-devs-hacks.pdb
@@ -102,3 +63,43 @@ C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.xml
 C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.dll
 C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
+C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.dll.config
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\x-devs-hacks.pdb
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Security.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Newtonsoft.Json.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Owin.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Net.Http.Formatting.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Helpers.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.WebHost.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Mvc.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Razor.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Microsoft.Owin.Security.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\Newtonsoft.Json.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Net.Http.Formatting.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Helpers.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Http.WebHost.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Mvc.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.Razor.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\bin\System.Web.WebPages.Razor.xml
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.dll
+C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
