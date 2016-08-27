@@ -24,6 +24,10 @@ namespace x_devs_hacks.Controllers
             return View();
         }
 
+        public ActionResult BackOffice() {
+            return View();
+        }
+
         public string getAllPickUps() {
 
             JavaScriptSerializer jSS = new JavaScriptSerializer();

@@ -3,4 +3,95 @@
     Layout = "~/Views/Layout/_Layout.cshtml";
 }
 
-<h2>BackOffice</h2>
+<section class="page-header">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+                <li><a>Inicio</a></li>
+                <li class="active">Quienes Somos?</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Reportar</h1>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+<div style="width:100%; height: 500px;" id="map"></div>
+
+<script>
+    var routes = {
+        getLast: '@Url.Action("getAllPickUps", "PickUp")'
+    };
+</script>
+
+<script src="~/Shared/lib/Theme%20Porto/themeforest/Documentation/Porto/assets/vendor/jquery/jquery.js"></script>
+<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+
+<script>
+
+    var myMap = function () { };
+
+    myMap.prototype.initMap = function () {
+
+        if (navigator.geolocation) {
+
+            $.post(routes.getLast, {}, function (response) {
+
+                var lstLickups = [];
+                // Init the data
+                try {
+                    lstLickups = JSON.parse(response);
+                } catch (err) { alert('error'); }
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: new google.maps.LatLng(9.901141, -83.995116),
+                    scrollwheel: true,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                //set multiple markers in the map
+                var marker, i;
+
+                lstLickups.forEach(function (item, index) {
+
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(item.Lat, item.Long),
+                        map: map,
+                        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                    });
+
+                });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+
+              
+
+            });
+
+        }
+        else { alert('Actualiza tu navegador para accesar a todos las caracteristicas de la pagina'); }
+    };
+
+    var Controller = new myMap();
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5igjNW3qEU-FZ62YOO4S2dwQu6Xn-lv8&callback=Controller.initMap"></script>
+
+
+

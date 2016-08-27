@@ -3062,6 +3062,7 @@
     <Content Include="Template\video\landing.ogv" />
     <Content Include="Template\video\light.ogv" />
     <Content Include="Views\PickUp\NewPickUp.cshtml" />
+    <Content Include="Views\PickUp\BackOffice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
