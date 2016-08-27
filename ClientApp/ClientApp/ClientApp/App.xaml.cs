@@ -10,8 +10,8 @@ namespace ClientApp
         {
             InitializeComponent();
 
-            Root = new MainPage();
-            TheMapPage = new MapPage();
+			TheMapPage = new MapPage();
+			Root = new MainPage { MapPage = TheMapPage };
             MainNavigationPage = new NavigationPage(Root);
             MainPage = MainNavigationPage;
         }

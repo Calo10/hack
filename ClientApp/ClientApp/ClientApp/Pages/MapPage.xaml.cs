@@ -15,6 +15,23 @@
             _positions = new List<Position>();
 
             InitializeComponent();
+
+			PickButton.Clicked += (sender, e) => {
+				/*
+if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
+            {
+                // Supply media options for saving our photo after it's taken.
+                var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                {
+                    Directory = "Pickups",
+                    Name = $"{DateTime.UtcNow}.jpg"
+                };
+
+                // Take a photo of the business receipt.
+                var file = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
+            }
+				*/
+			};
         }
 
         public MapPageViewModel ViewModel { get; private set; }
@@ -96,7 +113,7 @@
                 Address = address
             };
             MapControl.Pins.Add(pin);
-
+			//
             return pin;
         }
         private bool IsAlreadySet(Position position)
