@@ -102,3 +102,4 @@ C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-dev
 C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
 C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.dll
 C:\Users\Carlos Mendez\Documents\Visual Studio 2013\Projects\Hackaton\hack\x-devs-hacks\obj\Debug\x-devs-hacks.pdb
+C:\Users\krojas\Desktop\hack\x-devs-hacks\obj\Debug\x-devs-hacks.csprojResolveAssemblyReference.cache
