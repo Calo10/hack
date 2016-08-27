@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/packages
+/Mobile/ClientApp/bin/Debug
+/Mobile/ClientApp/obj/Debug
+/Mobile/ClientApp.Droid/bin/Debug
+/Mobile/ClientApp.WinPhone/obj/Debug
+/Mobile/ClientApp.Windows/obj/Debug
+/Mobile/ClientApp.UWP/obj/x86/Debug
+/Mobile/ClientApp.iOS/obj/iPhone/Debug
+/Mobile/ClientApp.Droid/obj/Debug
