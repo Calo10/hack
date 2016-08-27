@@ -40,33 +40,36 @@ namespace x_devs_hacks.Models
             {
                 id = 1,
                 IdUser = 3,
-                Description = "Intial Description",
+                Description = "Intial Intial DescriptionIntial DescriptionIntial DescriptionDescription",
                 Image = "",
                 Lat = 9.908114,
                 Long = -83.986426,
-                Appointment = new DateTime(2016, 9, 10, 13, 0, 0)
+                Appointment = new DateTime(2016, 9, 10, 13, 0, 0),
+                Status = "Pendiente"
             });
 
             lstPickUps.Add(new PickUpModel
             {
                 id = 2,
                 IdUser = 3,
-                Description = "Intial Description",
+                Description = "Intial DescriptionDescriptionDescription",
                 Image = "",
                 Lat = 9.899342,
                 Long = -83.977349,
-                Appointment = new DateTime(2016, 10, 11, 09, 0, 0)
+                Appointment = new DateTime(2016, 10, 11, 09, 0, 0),
+                Status = "Pendiente"
             });
 
             lstPickUps.Add(new PickUpModel
             {
                 id = 3,
                 IdUser = 3,
-                Description = "Intial Description",
+                Description = "Intial DDescriptionescription",
                 Image = "",
                 Lat = 9.897588,
                 Long = -83.996682,
-                Appointment = new DateTime(2016, 9, 10, 13, 0, 0)
+                Appointment = new DateTime(2016, 9, 10, 13, 0, 0),
+                Status = "Pendiente"
             });
 
 
@@ -74,11 +77,12 @@ namespace x_devs_hacks.Models
             {
                 id = 4,
                 IdUser = 3,
-                Description = "Intial Description",
+                Description = "Intial DDescriptionescription",
                 Image = "",
                 Lat = 9.909901,
                 Long = -84.001295,
-                Appointment = new DateTime(2016, 9, 10, 13, 0, 0)
+                Appointment = new DateTime(2016, 9, 10, 13, 0, 0),
+                Status = "Pendiente"
             });
 
 
@@ -86,11 +90,12 @@ namespace x_devs_hacks.Models
             {
                 id = 5,
                 IdUser = 3,
-                Description = "Intial Description",
+                Description = "Intial DDescriptionDescriptionescription",
                 Image = "",
                 Lat = 9.909927,
                 Long = -83.991339,
-                Appointment = new DateTime(2016, 9, 10, 13, 0, 0)
+                Appointment = new DateTime(2016, 9, 10, 13, 0, 0),
+                Status = "Pendiente"
             });
 
 
