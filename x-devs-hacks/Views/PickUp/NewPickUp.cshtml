@@ -54,8 +54,8 @@
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <label>Nombre</label>
-                                            <input id="txtNombreRegistro" maxlength="25" type="text" value="" class="form-control input-lg" required="">
+                                            <label>Descripccion</label>
+                                            <input id="txtDescription" maxlength="300" type="text" value="" class="form-control input-lg" required="">
                                         </div>
                                     </div>
                                 </div>
@@ -64,30 +64,6 @@
                                         <div class="col-md-12">
                                             <label>Direccion de E-mail</label>
                                             <input id="txtEmailRegistra" maxlength="25" type="email" value="" class="form-control input-lg" required="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-12">
-                                            <label>Tipo de Cuenta</label>
-                                            <select id="ddlTipoCuenta" class="form-control" name="TipoCuenta">
-                                                <option value="">--Seleccionar--</option>
-                                                <option value="C">Cliente</option>
-                                                <option value="U">Usuario</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-6">
-                                            <label>Password</label>
-                                            <input id="txtPasswordRegistro" maxlength="25" type="password" value="" class="form-control input-lg" required="">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label>Confirmar Password</label>
-                                            <input id="txtPasswordConfirmaRegistro" maxlength="25" type="password" value="" class="form-control input-lg" required="">
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +90,8 @@
 
 <script>
     var routes = {
-        getLast: '@Url.Action("getAllPickUps", "PickUp")'
+        getLast: '@Url.Action("getAllPickUps", "PickUp")',
+        createPickUp: '@Url.Action("createPickUp", "PickUp")',
     };
 </script>
 
@@ -123,7 +100,7 @@
 
     var jq = $(document);
 
-    var myMap = function () { };
+    var myMap = function () { var map; };
 
     myMap.prototype.initMap = function () {
 
@@ -137,7 +114,7 @@
                     lstLickups = JSON.parse(response);
                 } catch (err) { alert('error'); }
 
-                var map = new google.maps.Map(document.getElementById('map'), {
+                map = new google.maps.Map(document.getElementById('map'), {
                     center: new google.maps.LatLng(9.901141, -83.995116),
                     scrollwheel: true,
                     zoom: 15,
@@ -176,7 +153,56 @@
 
     jq.on('click', '#btnSolicitar', function () {
 
-        alert('ITS IN');
+        
+        var desc = jq.find('#txtDescription').val();
+     
+        var pickUp = { id : 1,
+            IdUser : 1,
+            Description : desc,
+            Image : "",
+            Lat: 9.901884,
+            Long: -83.994434,
+            Status : "Open",
+            Appointment : ""
+        };
+
+        pickUp = JSON.stringify(pickUp);
+
+        $.ajax({
+            url: routes.createPickUp,
+            type: 'POST',
+            async: false,
+            error: function (xhr, ajaxOptions, thrownError) {
+                console.log(thrownError);
+                ans = xhr.status;
+            },
+            beforeSend: function (jqXHR, settings) {
+
+            },
+            success: function (data) {
+                ans = data;
+            },
+            complete: function () {
+
+            },
+            data: {pPickUp:pickUp}
+        });
+
+
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(9.901884, -83.994434),
+            map: map,
+            icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+            return function () {
+                infowindow.setContent(marker);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+
+
 
     });
 

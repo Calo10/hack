@@ -16,6 +16,9 @@ namespace x_devs_hacks.Models
         public string Status { get; set; }
         public DateTime Appointment { get; set; }
 
+        List<PickUpModel> lstPickUps = new List<PickUpModel>();
+
+
         public PickUpModel() { }
         public PickUpModel(int id, int IdUser, string Description, string Image, double Lat, double Long, string Status, DateTime Appointment)
         {
@@ -33,9 +36,6 @@ namespace x_devs_hacks.Models
 
         public List<PickUpModel> getAllPickUps()
         {
-
-            List<PickUpModel> lstPickUps = new List<PickUpModel>();
-
             lstPickUps.Add(new PickUpModel
             {
                 id = 1,
@@ -98,11 +98,15 @@ namespace x_devs_hacks.Models
                 Status = "Pendiente"
             });
 
-
             return lstPickUps;
 
         }
 
+        public void newPickUp(PickUpModel pPickUp) {
+
+            lstPickUps.Add(pPickUp);
+
+        }
 
     }
 }

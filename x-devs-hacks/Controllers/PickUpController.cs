@@ -38,6 +38,17 @@ namespace x_devs_hacks.Controllers
         
         }
 
+        public string createPickUp(string pPickUp) {
+
+            string ans = string.Empty;
+            JavaScriptSerializer jSS = new JavaScriptSerializer();
+            PickUpModel pickUp = jSS.Deserialize<PickUpModel>(pPickUp);
+
+            pickUpM.newPickUp(pickUp);
+            return "";
+
+        }
+
 
     }
 }
