@@ -19,6 +19,11 @@ namespace x_devs_hacks.Controllers
             return View();
         }
 
+        public ActionResult NewPickUp()
+        {
+            return View();
+        }
+
         public string getAllPickUps() {
 
             JavaScriptSerializer jSS = new JavaScriptSerializer();

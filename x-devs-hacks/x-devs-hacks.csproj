@@ -150,6 +150,7 @@
     <Content Include="Scripts\jquery.signalR-2.2.1.js" />
     <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
     <Content Include="Shared\img\bus.svg" />
+    <Content Include="Shared\img\homeimagen.jpg" />
     <Content Include="Shared\img\user.svg" />
     <Content Include="Shared\lib\Theme Porto\themeforest\Documentation\Porto\assets\css\docs.css" />
     <Content Include="Shared\lib\Theme Porto\themeforest\Documentation\Porto\assets\img\20130227-3jo-39kb.jpg" />
@@ -3060,6 +3061,7 @@
     <Content Include="Template\video\dark.ogv" />
     <Content Include="Template\video\landing.ogv" />
     <Content Include="Template\video\light.ogv" />
+    <Content Include="Views\PickUp\NewPickUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
