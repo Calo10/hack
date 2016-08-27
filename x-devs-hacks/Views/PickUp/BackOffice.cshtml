@@ -9,7 +9,7 @@
     }
     li {
         list-style: none;
-        border-bottom: 1px #444;
+        border-bottom: 1px solid rgba(0,0,0,0.2) ;
         cursor: pointer;
     }
     #routes-item {
@@ -19,6 +19,7 @@
     .margin-top {
         margin-top: 15px;
     }
+   
 </style>
 
 <section class="page-header">
@@ -51,17 +52,18 @@
     <div class="col-xs-12 col-sm-12 col-md-12 margin-top">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h4 id="id-detail">ID:</h4>
-                <p></p>
+                <h4>ID:</h4>
+                <p id="id-detail"></p>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h4 id="id-description">Description:</h4>
-                <p></p>
+                <h4>Status:</h4>
+                <p id="id-status"></p>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <h4 id="id-status">Status:</h4>
-                <p></p>
+                <h4 >Description:</h4>
+                <p id="id-description"></p>
             </div>
+            
         </div>
     </div>
 
@@ -74,8 +76,6 @@
         getLast: '@Url.Action("getAllPickUps", "PickUp")'
     };
 </script>
-
-@*<script src="~/Shared/lib/Theme%20Porto/themeforest/Documentation/Porto/assets/vendor/jquery/jquery.js"></script>*@
 <script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
 
 
@@ -116,12 +116,24 @@
                 var wayPoint = [];
                 var itemRoutes = '';
                 lstLickups.forEach(function (item, index) {
-                    wayPoint.push[{ location: new google.maps.LatLng(item.Lat, item.Long), stopover: true }];
+
+                    wayPoint.push({ location: new google.maps.LatLng(item.Lat, item.Long), stopover: true });
+
                     itemRoutes += '<li data-id="' + item.id + '" data-description="' + item.Description + '" data-status="' + item.Status + '">';
                     itemRoutes += '<div>';
-                    itemRoutes += '<h4>' + item.id + '</h4>';
+                    itemRoutes += '<div class="row">';
+
+                    itemRoutes += '<div class="col-xs-12 col-sm-3 col-md-3">';
+                    itemRoutes += '<h4 class="item-li">' + item.id + '</h4>';
+                    itemRoutes += '</div>';
+
+                    itemRoutes += '<div class="col-xs-12 col-sm-3 col-md-9">';
+                    itemRoutes += '<p class="state">' + item.Status + ' </p>';
+                    itemRoutes += '</div>';
+
+                    itemRoutes += '</div>';
+                    
                     itemRoutes += '<p>' + item.Description + ' </p>';
-                    itemRoutes += '<p>' + item.Status+ ' </p>';
                     itemRoutes += '</div>';
                     itemRoutes += '</li>';
                 });
