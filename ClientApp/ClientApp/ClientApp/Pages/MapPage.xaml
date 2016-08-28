@@ -4,7 +4,11 @@
              x:Class="ClientApp.Pages.MapPage"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              Title="Mapa">
-  <ContentView HeightRequest="1" BackgroundColor="Silver" />
+	<ContentView HeightRequest="20" BackgroundColor="Silver">
+		<StackLayout Orientation="Vertical">
+			<Button x:Name="PickButton" Command="{Binding Path=PickCommand}" Text="Take photo" />
+		</StackLayout>
+	</ContentView>
   <AbsoluteLayout VerticalOptions="FillAndExpand">
     <ContentView Padding="50" VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1.0, 1.0">
       <StackLayout Spacing="20">

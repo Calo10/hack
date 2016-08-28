@@ -5,6 +5,8 @@
              x:Class="ClientApp.App">
 
   <Application.Resources>
-   
+   	<Style TargetType="NavigationPage">
+   		<Setter Property="BarBackgroundColor" Value="#0071BC" />
+	</Style>
   </Application.Resources>
 </Application>
