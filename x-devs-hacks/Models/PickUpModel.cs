@@ -42,10 +42,11 @@ namespace x_devs_hacks.Models
                 IdUser = 3,
                 Description = "Intial Intial DescriptionIntial DescriptionIntial DescriptionDescription",
                 Image = "",
-                Lat = 9.908114,
-                Long = -83.986426,
+                Lat = 9.902337,
+                Long = -83.993116,
                 Appointment = new DateTime(2016, 9, 10, 13, 0, 0),
                 Status = "Pendiente"
+                
             });
 
             lstPickUps.Add(new PickUpModel
@@ -54,8 +55,8 @@ namespace x_devs_hacks.Models
                 IdUser = 3,
                 Description = "Intial DescriptionDescriptionDescription",
                 Image = "",
-                Lat = 9.899342,
-                Long = -83.977349,
+                Lat = 9.902295,
+                Long = -83.993669,
                 Appointment = new DateTime(2016, 10, 11, 09, 0, 0),
                 Status = "Pendiente"
             });
