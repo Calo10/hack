@@ -40,7 +40,7 @@ namespace x_devs_hacks.Models
             {
                 id = 1,
                 IdUser = 3,
-                Description = "Intial Intial DescriptionIntial DescriptionIntial DescriptionDescription",
+                Description = "Equipo de Computo comprendido por una impresa y varios tarros",
                 Image = "",
                 Lat = 9.902337,
                 Long = -83.993116,
@@ -53,7 +53,7 @@ namespace x_devs_hacks.Models
             {
                 id = 2,
                 IdUser = 3,
-                Description = "Intial DescriptionDescriptionDescription",
+                Description = "Desechos electronicos, entre ellos calculadores, monitores y varias mas....",
                 Image = "",
                 Lat = 9.902295,
                 Long = -83.993669,
@@ -65,7 +65,7 @@ namespace x_devs_hacks.Models
             {
                 id = 3,
                 IdUser = 3,
-                Description = "Intial DDescriptionescription",
+                Description = "Equipo de computo y celulares con baterias entre otros",
                 Image = "",
                 Lat = 9.897588,
                 Long = -83.996682,
@@ -78,7 +78,7 @@ namespace x_devs_hacks.Models
             {
                 id = 4,
                 IdUser = 3,
-                Description = "Intial DDescriptionescription",
+                Description = "Basura electronica, 5 computadoras y un horno de microhondas",
                 Image = "",
                 Lat = 9.909901,
                 Long = -84.001295,
@@ -91,7 +91,7 @@ namespace x_devs_hacks.Models
             {
                 id = 5,
                 IdUser = 3,
-                Description = "Intial DDescriptionDescriptionescription",
+                Description = "Monitores en mal estado de varios tamannos",
                 Image = "",
                 Lat = 9.909927,
                 Long = -83.991339,
