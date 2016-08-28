@@ -4,19 +4,107 @@
 }
 <style>
     #map {
-        display: block; 
+        display: block;
         width: 100%;
         height: 80%;
     }
-</style>
 
+    #container-button {
+        text-align: center;
+        margin: 20px;
+        padding: 40px;
+    }
+
+    #container-download {
+        height: 300px;
+    }
+
+    #img-app, #img-dwn {
+        height: 500px;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #img-app {
+        width: 69%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    #img-dwn {
+        width: 30%;
+    }
+     .item-section-logo {
+        width: 74px;
+        height: 74px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
+    .item-section {
+        margin-top: 25px;
+    }
+
+        .item-section h2 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .item-section img {
+            padding: 5px;
+        }
+
+        .item-section p {
+            color: #fff;
+        }
+</style>
 <div>
-    <img src=@Url.Content("~/Shared/img/homeimagen.jpg") style="width:100%; height:440px;"/>
+    <img id="img-banner" src=@Url.Content("~/Shared/img/homelogo.png") style="width:100%; height:440px;" />
 </div>
 
 <div class="">
     <div class="">
-        <div id="btnContainer" style="background-color: #0071bc; width: 100%; height:400px;">
+        <div id="wrapper-content" style="background-color: #0071bc; width: 100%; height:400px;">
+
+            <div id="container-button" class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="item-section">
+                        <img src="@Url.Content("~/Shared/img/reportar.png")" alt="Reportar" />
+                        <h2>Reportar</h2>
+                        <p>Puedes crear un repore para notificar al recolecto tienes un desecho.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="item-section">
+                        <img src="@Url.Content("~/Shared/img/solicitar.png")" alt="Solicitar" />
+                        <h2>Recoleccion</h2>
+                        <p>Puedes solicitar la recoleccion en el sitio de que este a tu comodidad.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="item-section">
+                        <img src="@Url.Content("~/Shared/img/centro-acopio.png")" alt="Cebtro Acopio" />
+                        <h2>Centros</h2>
+                        <p>Puedes estar al tanto de todos los sitios de acopio cercanos a tu comunidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container-download">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <img id="img-app" src="@Url.Content("~/Shared/img/app.png")" alt="Cebtro Acopio" />
+                        <img id="img-dwn" src="@Url.Content("~/Shared/img/descarga-app.png")" alt="Cebtro Acopio" />
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
