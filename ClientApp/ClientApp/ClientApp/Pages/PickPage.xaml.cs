@@ -14,8 +14,12 @@ namespace ClientApp.Pages
         {
             InitializeComponent();
 
-            /*
-            */
+			CompleteButton.Clicked += (sender, e) => {
+				CompleteButton.Text = "Enviando...";
+				CompleteButton.IsEnabled = false;
+
+				Navigation.RemovePage(Navigation.NavigationStack.Last());
+			};
         }
     }
 }

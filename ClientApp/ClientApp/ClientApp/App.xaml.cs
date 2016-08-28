@@ -11,8 +11,8 @@ namespace ClientApp
             InitializeComponent();
 
 			TheMapPage = new MapPage();
-			Root = new MainPage { MapPage = TheMapPage };
-            MainNavigationPage = new NavigationPage(Root);
+			Root = new MainPage (TheMapPage);
+			MainNavigationPage = new NavigationPage(Root) { BarBackgroundColor = Color.FromHex("#0071BC") };
             MainPage = MainNavigationPage;
         }
 
@@ -20,10 +20,9 @@ namespace ClientApp
         public MainPage Root { get; private set; }
         public MapPage TheMapPage { get; private set; }
        
-        /*
         protected async override void OnStart()
         {
             await TheMapPage.SetupMap();
-        }*/
+        }
     }
 }
