@@ -15,7 +15,27 @@
         padding: 40px;
     }
 
-    .item-section-logo {
+    #container-download {
+        height: 300px;
+    }
+
+    #img-app, #img-dwn {
+        height: 500px;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #img-app {
+        width: 69%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    #img-dwn {
+        width: 30%;
+    }
+     .item-section-logo {
         width: 74px;
         height: 74px;
         border: 2px solid #fff;
@@ -70,6 +90,19 @@
                         <p>Puedes estar al tanto de todos los sitios de acopio cercanos a tu comunidad.</p>
                     </div>
                 </div>
+            </div>
+
+            <div id="container-download">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <img id="img-app" src="@Url.Content("~/Shared/img/app.png")" alt="Cebtro Acopio" />
+                        <img id="img-dwn" src="@Url.Content("~/Shared/img/descarga-app.png")" alt="Cebtro Acopio" />
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
