@@ -150,11 +150,17 @@
     <Content Include="Scripts\jquery.signalR-2.2.1.js" />
     <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
     <Content Include="Shared\css\home.css" />
+    <Content Include="Shared\img\app.png" />
     <Content Include="Shared\img\bus.svg" />
     <Content Include="Shared\img\centro-acopio.png" />
+    <Content Include="Shared\img\centro-acopio1.png" />
+    <Content Include="Shared\img\descarga-app.png" />
     <Content Include="Shared\img\homeimagen.jpg" />
     <Content Include="Shared\img\homelogo.png" />
+    <Content Include="Shared\img\logo.png" />
+    <Content Include="Shared\img\logo1.png" />
     <Content Include="Shared\img\reportar.png" />
+    <Content Include="Shared\img\reportar1.png" />
     <Content Include="Shared\img\solicitar.png" />
     <Content Include="Shared\img\user.svg" />
     <Content Include="Shared\lib\Theme Porto\themeforest\Documentation\Porto\assets\css\docs.css" />
