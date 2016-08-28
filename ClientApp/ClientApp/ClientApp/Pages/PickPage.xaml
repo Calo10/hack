@@ -2,5 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClientApp.Pages.PickPage">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+	<StackLayout Orientation="Vertical">
+		<Grid>
+			<Label Text="Descripcion" HorizontalOptions="Start" />
+			<Editor HorizontalOptions="FillAndExpand" />
+		</Grid>
+		<Grid>
+			<Button Text="Foto" />
+		</Grid>
+		<Button x:Name="CompleteButton" Text="Enviar" />
+	</StackLayout>
 </ContentPage>
